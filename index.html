@@ -886,11 +886,14 @@
 
           <div class="col-lg-6">
 		  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" role="form" class="php-email-form">
-			  <script src="https://www.google.com/recaptcha/api.js"></script>
-			  <script>
-			   function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-			  </script>
-			   <input type=hidden name='captcha_settings' value='{"keyname":"Google","fallback":"true","orgId":"00D6F000001OsOC","ts":""}'>
+			 <script src="https://www.google.com/recaptcha/api.js"></script>
+			 <script>
+			  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+			 </script>
+			 
+		
+
+		<input type=hidden name='captcha_settings' value='{"keyname":"googlev2","fallback":"true","orgId":"00D6F000001OsOC","ts":""}'>
 		  <input type=hidden name="oid" value="00D6F000001OsOC">
 		  <input type=hidden name="retURL" value="https://coderinme.com">
 		  
@@ -914,7 +917,8 @@
                 <div class="validate"></div>
               </div>
 
-	      <div class="g-recaptcha" data-sitekey="6LdFnnkaAAAAAPrD0q2qqkdfJ60hB83AhLnMcXrS"></div>
+
+	    <div class="g-recaptcha" data-sitekey="6LeWo3kaAAAAAIxIvFeof2Dtr7HgyS4pVqohTGNs"></div><br>
               <div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
